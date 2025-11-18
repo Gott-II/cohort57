@@ -1,0 +1,83 @@
+.wrapper {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4b4b4b;
+  margin-bottom: 20px;
+}
+
+.output {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn {
+  background-color: #ffcb6b;
+  color: #4b4b4b;
+  font-weight: bold;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(255, 203, 107, 0.4);
+}
+
+.btn:hover {
+  background-color: #ffe39f;
+}
+
+.dark {
+  background-color: #333;
+  color: #f5f5f5;
+}
+.dark .btn {
+  background-color: #ffb74d;
+  color: #222;
+}
+.dark .btn:hover {
+  background-color: #ffc97a;
+}
+.dark .output {
+  background-color: #444;
+  color: #f5f5f5;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+}
+.light {
+  background-color: #f5f5f5;
+  color: #222;
+}
+.light .btn {
+  background-color: #ffcb6b;
+  color: #4b4b4b;
+}
+.light .btn:hover {
+  background-color: #ffe39f;
+}
+.light .output {
+  background-color: #fff;
+  color: #333;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}

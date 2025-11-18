@@ -1,0 +1,45 @@
+/* Counter.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  background: linear-gradient(145deg, #ffd700, #ffb700);
+  color: #1f1c2c;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+}
+
+.btn:hover {
+  background: linear-gradient(145deg, #ffef8a, #ffd700);
+  transform: scale(1.05);
+}
+
+.btn:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 1px 1px 2px #000;
+}

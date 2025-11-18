@@ -1,0 +1,21 @@
+.wrapper {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #a04694;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.wrapper p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #555;
+}
