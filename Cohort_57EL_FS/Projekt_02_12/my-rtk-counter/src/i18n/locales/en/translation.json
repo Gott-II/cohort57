@@ -1,0 +1,11 @@
+{
+  "title": "Weather Forecast",
+  "enterCity": "Enter city",
+  "getWeather": "Get Weather",
+  "loading": "Loading...",
+  "error": "Error",
+  "temperature": "Temperature",
+  "feelsLike": "Feels like",
+  "humidity": "Humidity",
+  "wind": "Wind"
+}

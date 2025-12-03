@@ -1,0 +1,11 @@
+{
+  "title": "Wettervorhersage",
+  "enterCity": "Stadt eingeben",
+  "getWeather": "Wetter abrufen",
+  "loading": "Lade...",
+  "error": "Fehler",
+  "temperature": "Temperatur",
+  "feelsLike": "Gefühlt",
+  "humidity": "Luftfeuchtigkeit",
+  "wind": "Wind"
+}

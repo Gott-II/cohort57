@@ -1,0 +1,82 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 36px; /* mehr Luft */
+  padding: 40px;
+  justify-items: center;
+  background: linear-gradient(135deg, #f5f7fa, #e4ebf0);
+}
+
+.card {
+  width: 100%;
+  max-width: 250px;
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #1a1a1a;
+  font-family: "Inter", "Roboto", sans-serif;
+}
+
+.field {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.field span,
+.address span {
+  font-weight: 600;
+  color: #222;
+}
+
+
+.address {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+  font-family: "Inter", "Roboto", sans-serif;
+}
+
+.loading {
+  color: #666;
+}
+
+.error {
+  color: #d63031;
+  font-weight: 600;
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}

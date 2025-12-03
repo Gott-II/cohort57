@@ -1,0 +1,15 @@
+:root {
+  --primary-color: rgb(112, 76, 182);
+  --bg-color: #ffffff;
+  --text-color: #333;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

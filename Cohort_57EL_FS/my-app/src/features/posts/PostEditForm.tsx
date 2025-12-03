@@ -1,0 +1,30 @@
+import { FormEvent, useState } from 'react'
+import { useAppDispatch } from '../../app/hooks'
+import { editTitle } from './postsSlice'
+
+export default function PostEditForm(props: { postId: number }): JSX.Element {
+	const { postId } = props
+	const [title, setTitle] = useState<string>('')
+	const dispatch = useAppDispatch()
+	function handleSubmit(e: FormEvent<HTMLFormElement>): void {
+		e.preventDefault()
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+		dispatch(editTitle({ id: postId, title }))
+		//Отправка экшена editTitle:
+		// Вызывается экшен editTitle, передаются параметры: id и title.
+		// dispatch(...) — отправляет это действие в Redux.
+	}
+	return (
+		<div>
+			<form onSubmit={handleSubmit}>
+				<input
+					type="text"
+					placeholder="new title"
+					value={title}
+					onChange={e => setTitle(e.target.value)}
+				/>
+				<button type="submit">edit</button>
+			</form>
+		</div>
+	)
+}

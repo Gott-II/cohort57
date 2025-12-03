@@ -1,0 +1,223 @@
+/* ============================= */
+/* Globale Variablen für Farben  */
+/* ============================= */
+:root {
+  --color-primary: #007bff;
+  --color-primary-hover: #0056b3;
+  --color-success: #28a745;
+  --color-success-hover: #1e7e34;
+  --color-warning: #ffc107;
+  --color-error: #dc3545;
+  --color-border: #ddd;
+  --color-bg: #f9f9f9;
+  --color-text: #333;
+}
+
+/* ============================= */
+/* Container & Titel             */
+/* ============================= */
+.container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+
+/* ============================= */
+/* Grid-Layout für Listen        */
+/* ============================= */
+.list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+@media (max-width: 480px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================= */
+/* Karten                        */
+/* ============================= */
+.card {
+  position: relative; /* wichtig für den Close-Button */
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.cardHeader {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.cardInfo {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.cardInfo span {
+  font-weight: 600;
+  color: #000;
+}
+
+.image {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+/* ============================= */
+/* Roter Close-Button            */
+/* ============================= */
+.closeButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--color-error);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.closeButton:hover {
+  background-color: #a71d2a;
+}
+
+/* ============================= */
+/* Buttons allgemein             */
+/* ============================= */
+.buttonBase {
+  display: inline-block;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buttonPrimary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.buttonPrimary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.buttonSuccess {
+  background-color: var(--color-success);
+  color: #fff;
+}
+.buttonSuccess:hover {
+  background-color: var(--color-success-hover);
+}
+
+.buttonDisabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.buttonDisabled:hover {
+  background-color: #cccccc;
+}
+
+/* ============================= */
+/* Statusmeldungen               */
+/* ============================= */
+.statusMessage {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.loading {
+  color: #666;
+}
+
+.error {
+  color: var(--color-error);
+  font-weight: bold;
+}
+
+.noUsers {
+  color: #999;
+}
+
+.userCount {
+  color: #444;
+  margin-top: 15px;
+}
+.userCount span {
+  font-weight: 600;
+  color: #000;
+}
+
+/* ============================= */
+/* Pagination                    */
+/* ============================= */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.paginationButton {
+  display: inline-block;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  background-color: var(--color-success);
+  color: #fff;
+}
+
+.paginationButton:hover {
+  background-color: var(--color-success-hover);
+}
+
+.paginationButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.paginationButton:disabled:hover {
+  background-color: #cccccc;
+}
+
+.activePage {
+  background-color: var(--color-warning);
+  color: #212529;
+}
+
+
