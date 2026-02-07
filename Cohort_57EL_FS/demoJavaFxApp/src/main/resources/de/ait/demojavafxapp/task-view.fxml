@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="de.ait.demojavafxapp.controller.TaskController"
+            prefWidth="900" prefHeight="600">
+
+    <!-- ░░░ TOP-BEREICH ░░░ -->
+    <top>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <HBox spacing="10">
+                <!-- Sprachumschalter -->
+                <MenuButton fx:id="langButton"
+                            text="🌐"
+                            styleClass="lang-toggle">
+
+                    <items>
+                        <MenuItem text="🇩🇪 Deutsch" onAction="#switchToGerman"/>
+                        <MenuItem text="🇬🇧 English" onAction="#switchToEnglish"/>
+                    </items>
+
+                </MenuButton>
+
+
+
+                <!-- Dark/Light Mode -->
+                <Button fx:id="themeButton"
+                        text="🌓"
+                        prefWidth="40"
+                        onAction="#onSwitchTheme"
+                        styleClass="theme-toggle"/>
+
+
+
+                <Label fx:id="titleLabel" text="%title"
+                       style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+            </HBox>
+
+            <!-- Eingabezeile -->
+            <HBox spacing="10">
+                <TextField fx:id="titleField" promptText="%enter_task" HBox.hgrow="ALWAYS"/>
+                <ComboBox fx:id="priorityBox" prefWidth="140"/>
+                <Button text="%add" onAction="#onAddTask"/>
+            </HBox>
+
+            <CheckBox fx:id="showOnlyDoneCheckBox" text="%show_done"/>
+        </VBox>
+    </top>
+
+    <!-- ░░░ CENTER – TABELLE ░░░ -->
+    <center>
+        <TableView fx:id="taskTable" prefHeight="500">
+            <columns>
+                <TableColumn fx:id="idColumn" text="%id" prefWidth="60"/>
+                <TableColumn fx:id="titleColumn" text="%task" prefWidth="450"/>
+                <TableColumn fx:id="priorityColumn" text="%priority" prefWidth="150"/>
+                <TableColumn fx:id="doneColumn" text="%done" prefWidth="100"/>
+                <TableColumn fx:id="deleteColumn" text="" prefWidth="50"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <!-- ░░░ BOTTOM – STATUS + UNDO/REDO ░░░ -->
+    <bottom>
+        <HBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+
+
+            <Button fx:id="undoButton" text="%undo" onAction="#onUndo"/>
+            <Button fx:id="redoButton" text="%redo" onAction="#onRedo"/>
+            <Label fx:id="statusLabel" text="Bereit."/>
+
+
+
+        </HBox>
+    </bottom>
+
+</BorderPane>
+
+
+

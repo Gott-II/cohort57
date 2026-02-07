@@ -1,0 +1,29 @@
+.title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 10 0;
+}
+
+.top-area {
+    -fx-padding: 15;
+}
+
+.bottom-area {
+    -fx-padding: 10;
+}
+
+.table-area {
+    -fx-background-color: white;
+}
+
+.table-view .column-header {
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-font-size: 14px;
+}
+
+.label {
+    -fx-font-size: 14px;
+}

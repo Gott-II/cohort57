@@ -1,0 +1,131 @@
+2026-01-21 22:44:17 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-21 22:44:17 [main] INFO  d.a.j.controllers.CarControllerIT - Starting CarControllerIT using Java 21.0.9 with PID 13216 (started by gott_ in C:\Users\gott_\OneDrive\Desktop\Frontend_Linux\cohort57\Cohort_57EL_FS\Workspace\JavaProgLessonsPro59)
+2026-01-21 22:44:17 [main] DEBUG d.a.j.controllers.CarControllerIT - Running with Spring Boot v3.5.6, Spring v6.2.11
+2026-01-21 22:44:17 [main] INFO  d.a.j.controllers.CarControllerIT - No active profile set, falling back to 1 default profile: "default"
+2026-01-21 22:44:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-21 22:44:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-01-21 22:44:18 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-21 22:44:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-01-21 22:44:18 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-21 22:44:19 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-21 22:44:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-21 22:44:19 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-01-21 22:44:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-21 22:44:19 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-21 22:44:19 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-21 22:44:20 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-21 22:44:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21 22:44:20 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-21 22:44:21 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-01-21 22:44:21 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-01-21 22:44:21 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2026-01-21 22:44:21 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Completed initialization in 1 ms
+2026-01-21 22:44:21 [main] INFO  d.a.j.controllers.CarControllerIT - Started CarControllerIT in 3.847 seconds (process running for 4.753)
+2026-01-21 22:44:21 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-21 22:44:21 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-21 22:44:21 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "NOT_A_NUMBER": not a valid `int` value]
+2026-01-21 22:44:21 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/99999 - Auto nach ID abrufen
+2026-01-21 22:44:21 [main] WARN  d.a.j.controllers.CarController - Auto mit ID 99999 nicht gefunden
+2026-01-21 22:44:21 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'status': Failed to convert value of type 'java.lang.String' to required type 'de.ait.javaproglessonspro.enums.CarStatus'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam de.ait.javaproglessonspro.enums.CarStatus] for value [NOT_A_STATUS]]
+2026-01-21 22:44:21 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'fuelType': Failed to convert value of type 'java.lang.String' to required type 'de.ait.javaproglessonspro.enums.FuelType'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam de.ait.javaproglessonspro.enums.FuelType] for value [INVALID_FUEL]]
+2026-01-21 22:44:21 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/by-power?minHp=300&maxHp=100 - Suche nach Leistungsbereich
+2026-01-21 22:44:21 [main] WARN  d.a.j.controllers.CarController - Ungültiger Leistungsbereich: minHp 300 > maxHp 100
+2026-01-21 22:44:21 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/by-price?min=50000&max=10000 - Preisbereichsuche
+2026-01-21 22:44:21 [main] WARN  d.a.j.controllers.CarController - Ungültiger Preisbereich: min 50000 > max 10000
+2026-01-21 22:44:21 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.ait.javaproglessonspro.controllers.CarControllerIT$DELETE_Endpoints]: DELETE_Endpoints does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-21 22:44:21 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.ait.javaproglessonspro.JavaProgLessonsPro59Application for test class de.ait.javaproglessonspro.controllers.CarControllerIT$DELETE_Endpoints
+2026-01-21 22:44:21 [main] INFO  d.a.j.controllers.CarController - DELETE /api/cars/4 - Auto löschen
+2026-01-21 22:44:22 [main] INFO  d.a.j.controllers.CarController - Auto mit ID 4 erfolgreich gelöscht
+2026-01-21 22:44:22 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.ait.javaproglessonspro.controllers.CarControllerIT$PUT_Endpoints]: PUT_Endpoints does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-21 22:44:22 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.ait.javaproglessonspro.JavaProgLessonsPro59Application for test class de.ait.javaproglessonspro.controllers.CarControllerIT$PUT_Endpoints
+2026-01-21 22:44:22 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.ait.javaproglessonspro.controllers.CarControllerIT$GET_Endpoints]: GET_Endpoints does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-21 22:44:22 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.ait.javaproglessonspro.JavaProgLessonsPro59Application for test class de.ait.javaproglessonspro.controllers.CarControllerIT$GET_Endpoints
+2026-01-21 22:44:22 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/by-color?color=red - Autos nach Farbe suchen
+2026-01-21 22:44:22 [main] INFO  d.a.j.controllers.CarController - Gefundene Autos mit Farbe 'red': 1
+2026-01-21 22:44:22 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/7 - Auto nach ID abrufen
+2026-01-21 22:44:22 [main] INFO  d.a.j.controllers.CarController - Auto gefunden: de.ait.javaproglessonspro.model.Car@6267b25a
+2026-01-21 22:44:22 [main] INFO  d.a.j.controllers.CarController - GET /api/cars - Alle Autos abrufen
+2026-01-21 22:44:22 [main] INFO  d.a.j.controllers.CarController - Gefundene Autos: 1
+2026-01-21 22:44:22 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/by-power?minHp=150&maxHp=250 - Suche nach Leistungsbereich
+2026-01-21 22:44:22 [main] INFO  d.a.j.controllers.CarController - Gefundene Autos im Leistungsbereich 150 - 250 PS: 1
+2026-01-21 22:44:22 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/by-fuel?fuelType=DIESEL - Autos nach Kraftstofftyp suchen
+2026-01-21 22:44:22 [main] INFO  d.a.j.controllers.CarController - Gefundene Autos mit Kraftstofftyp 'DIESEL': 1
+2026-01-21 22:44:22 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.ait.javaproglessonspro.controllers.CarControllerIT$POST_Endpoints]: POST_Endpoints does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-21 22:44:22 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.ait.javaproglessonspro.JavaProgLessonsPro59Application for test class de.ait.javaproglessonspro.controllers.CarControllerIT$POST_Endpoints
+2026-01-21 22:44:22 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "NOT_A_NUMBER": not a valid `int` value]
+2026-01-21 22:44:22 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21 22:44:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-21 22:44:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-21 22:53:54 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-21 22:53:54 [main] INFO  d.a.j.controllers.CarControllerIT - Starting CarControllerIT using Java 21.0.9 with PID 8080 (started by gott_ in C:\Users\gott_\OneDrive\Desktop\Frontend_Linux\cohort57\Cohort_57EL_FS\Workspace\JavaProgLessonsPro59)
+2026-01-21 22:53:54 [main] DEBUG d.a.j.controllers.CarControllerIT - Running with Spring Boot v3.5.6, Spring v6.2.11
+2026-01-21 22:53:54 [main] INFO  d.a.j.controllers.CarControllerIT - No active profile set, falling back to 1 default profile: "default"
+2026-01-21 22:53:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-21 22:53:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-01-21 22:53:55 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-21 22:53:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-01-21 22:53:55 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-21 22:53:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-21 22:53:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-21 22:53:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-01-21 22:53:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-21 22:53:55 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-21 22:53:55 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-21 22:53:56 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-21 22:53:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21 22:53:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-21 22:53:57 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-01-21 22:53:57 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-01-21 22:53:57 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2026-01-21 22:53:57 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Completed initialization in 0 ms
+2026-01-21 22:53:57 [main] INFO  d.a.j.controllers.CarControllerIT - Started CarControllerIT in 3.759 seconds (process running for 4.538)
+2026-01-21 22:53:57 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-21 22:53:57 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-21 22:53:58 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "NOT_A_NUMBER": not a valid `int` value]
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/99999 - Auto nach ID abrufen
+2026-01-21 22:53:58 [main] WARN  d.a.j.controllers.CarController - Auto mit ID 99999 nicht gefunden
+2026-01-21 22:53:58 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'status': Failed to convert value of type 'java.lang.String' to required type 'de.ait.javaproglessonspro.enums.CarStatus'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam de.ait.javaproglessonspro.enums.CarStatus] for value [NOT_A_STATUS]]
+2026-01-21 22:53:58 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'fuelType': Failed to convert value of type 'java.lang.String' to required type 'de.ait.javaproglessonspro.enums.FuelType'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam de.ait.javaproglessonspro.enums.FuelType] for value [INVALID_FUEL]]
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/by-power?minHp=300&maxHp=100 - Suche nach Leistungsbereich
+2026-01-21 22:53:58 [main] WARN  d.a.j.controllers.CarController - Ungültiger Leistungsbereich: minHp 300 > maxHp 100
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/by-price?min=50000&max=10000 - Preisbereichsuche
+2026-01-21 22:53:58 [main] WARN  d.a.j.controllers.CarController - Ungültiger Preisbereich: min 50000 > max 10000
+2026-01-21 22:53:58 [main] WARN  d.a.j.validation.CarValidator - Ungültiges Auto empfangen: [Marke darf nicht leer sein, Modell darf nicht leer sein, Baujahr muss >= 1900 sein, Kilometerstand muss >= 0 sein, Preis muss >= 1 sein, Status darf nicht null sein, Farbe darf nicht leer sein, PS muss >= 1 sein, Kraftstofftyp darf nicht null sein, Getriebe darf nicht null sein]
+2026-01-21 22:53:58 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.ait.javaproglessonspro.controllers.CarControllerIT$DELETE_Endpoints]: DELETE_Endpoints does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-21 22:53:58 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.ait.javaproglessonspro.JavaProgLessonsPro59Application for test class de.ait.javaproglessonspro.controllers.CarControllerIT$DELETE_Endpoints
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - DELETE /api/cars/4 - Auto löschen
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - Auto mit ID 4 erfolgreich gelöscht
+2026-01-21 22:53:58 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.ait.javaproglessonspro.controllers.CarControllerIT$PUT_Endpoints]: PUT_Endpoints does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-21 22:53:58 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.ait.javaproglessonspro.JavaProgLessonsPro59Application for test class de.ait.javaproglessonspro.controllers.CarControllerIT$PUT_Endpoints
+2026-01-21 22:53:58 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.ait.javaproglessonspro.controllers.CarControllerIT$GET_Endpoints]: GET_Endpoints does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-21 22:53:58 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.ait.javaproglessonspro.JavaProgLessonsPro59Application for test class de.ait.javaproglessonspro.controllers.CarControllerIT$GET_Endpoints
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/by-color?color=red - Autos nach Farbe suchen
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - Gefundene Autos mit Farbe 'red': 1
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/7 - Auto nach ID abrufen
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - Auto gefunden: de.ait.javaproglessonspro.model.Car@6068e9d9
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - GET /api/cars - Alle Autos abrufen
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - Gefundene Autos: 1
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/by-power?minHp=150&maxHp=250 - Suche nach Leistungsbereich
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - Gefundene Autos im Leistungsbereich 150 - 250 PS: 1
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - GET /api/cars/by-fuel?fuelType=DIESEL - Autos nach Kraftstofftyp suchen
+2026-01-21 22:53:58 [main] INFO  d.a.j.controllers.CarController - Gefundene Autos mit Kraftstofftyp 'DIESEL': 1
+2026-01-21 22:53:58 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.ait.javaproglessonspro.controllers.CarControllerIT$POST_Endpoints]: POST_Endpoints does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-21 22:53:58 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.ait.javaproglessonspro.JavaProgLessonsPro59Application for test class de.ait.javaproglessonspro.controllers.CarControllerIT$POST_Endpoints
+2026-01-21 22:53:58 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "NOT_A_NUMBER": not a valid `int` value]
+2026-01-21 22:53:58 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-21 22:53:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-21 22:53:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
