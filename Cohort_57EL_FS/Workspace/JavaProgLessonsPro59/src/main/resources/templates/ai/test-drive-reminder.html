@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Напоминание о тест-драйве</title>
+</head>
+<body>
+<p>Здравствуйте, <strong th:text="${clientName}">Клиент</strong>!</p>
+
+<p>Напоминаем вам о запланированном тест-драйве автомобиля
+  <strong th:text="${car.brand} + ' ' + ${car.model}">Марка Модель</strong>.</p>
+
+<p>Дата и время: <strong th:text="${testDriveDateTime}">01.01.2025 10:00</strong></p>
+
+<p>Ждём вас в нашем автосалоне!</p>
+</body>
+</html>

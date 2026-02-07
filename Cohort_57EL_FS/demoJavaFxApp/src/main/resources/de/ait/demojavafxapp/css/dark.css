@@ -1,0 +1,191 @@
+/* =========================================================
+   GLOBAL ROOT
+   ========================================================= */
+.root {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+.label {
+    -fx-text-fill: white;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.button {
+    -fx-background-color: linear-gradient(#3a3a3a, #2a2a2a);
+    -fx-text-fill: white;
+    -fx-border-color: #555;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 6 14;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#4a4a4a, #333);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(#333, #222);
+}
+
+/* =========================================================
+   THEME TOGGLE BUTTON (🌙 / 🌞)
+   ========================================================= */
+.theme-toggle {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.theme-toggle:hover {
+    -fx-background-color: #333;
+    -fx-background-radius: 6;
+}
+
+/* =========================================================
+   LANGUAGE TOGGLE (🇩🇪 / 🇬🇧)
+   ========================================================= */
+.lang-toggle {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-padding: 0 6;
+    -fx-border-width: 0;
+}
+
+.lang-toggle:hover {
+    -fx-background-color: #333;
+    -fx-background-radius: 6;
+}
+
+/* =========================================================
+   TEXTFIELD
+   ========================================================= */
+.text-field {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+    -fx-border-color: #555;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-prompt-text-fill: #bbbbbb;
+}
+
+/* =========================================================
+   COMBOBOX
+   ========================================================= */
+.combo-box {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #555;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+/* =========================================================
+   CHECKBOX
+   ========================================================= */
+.check-box {
+    -fx-text-fill: white;
+}
+
+/* =========================================================
+   TABLEVIEW
+   ========================================================= */
+.table-view {
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #444;
+}
+
+/* Tabellenkopf */
+.table-view .column-header-background {
+    -fx-background-color: #2a2a2a;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Tabellenzellen */
+.table-view .table-cell {
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+    -fx-background-color: #1e1e1e;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #252525;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #333333;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #444444;
+}
+
+/* =========================================================
+   SCROLLBARS
+   ========================================================= */
+.scroll-bar .thumb {
+    -fx-background-color: #555;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #666;
+}
+
+/* =========================================================
+   MENU BUTTON (Dropdown)
+   ========================================================= */
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+/* Dropdown Hintergrund */
+.context-menu {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #444;
+}
+
+/* Menüeinträge */
+.menu-item {
+    -fx-background-color: #2a2a2a;
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+.menu-item:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+
+
+
+
+
+
+

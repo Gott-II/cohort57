@@ -1,0 +1,22 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+                http://www.liquibase.org/xml/ns/dbchangelog
+                https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.23.xsd">
+
+    <changeSet id="012-add-test-documents" author="ait" context="test">
+        <insert tableName="client_documents_db">
+            <column name="client_email" value="test@mail.com"/>
+            <column name="doc_type" value="PASSPORT"/>
+            <column name="content_type" value="application/pdf"/>
+            <column name="size" valueNumeric="12345"/>
+            <column name="original_file_name" value="test.pdf"/>
+            <column name="file_name" value="test_stored.pdf"/> <!-- NEU -->
+            <column name="data" value="TESTDATA"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Подтверждение тест-драйва</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
+    .container { max-width: 600px; margin: 0 auto; background: #ffffff; padding: 20px; border-radius: 8px; }
+    .header { text-align: center; margin-bottom: 20px; }
+    .car-card { border: 1px solid #ddd; padding: 15px; border-radius: 6px; margin-bottom: 20px; }
+    .btn { display: inline-block; padding: 10px 20px; background: #d9534f; color: #fff; text-decoration: none; border-radius: 4px; }
+    .footer { font-size: 12px; color: #777; margin-top: 20px; text-align: center; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Подтверждение тест-драйва</h2>
+    <p>Автосалон "HomeRent Cars"</p>
+  </div>
+
+  <p>Здравствуйте, <strong th:text="${clientName}">Клиент</strong>!</p>
+
+  <p>Вы записались на тест-драйв автомобиля:</p>
+
+  <div class="car-card">
+    <p><strong th:text="${car.brand} + ' ' + ${car.model}">Марка Модель</strong></p>
+    <p>Год: <span th:text="${car.year}">2024</span></p>
+    <p>Цена: <span th:text="${car.price}">10000</span> €</p>
+  </div>
+
+  <p>Дата и время тест-драйва: <strong th:text="${testDriveDateTime}">01.01.2025 10:00</strong></p>
+  <p>Адрес дилерского центра: <strong th:text="${dealerAddress}">Адрес</strong></p>
+  <p>Телефон для связи: <strong th:text="${dealerPhone}">+49...</strong></p>
+
+  <p>Если вы хотите отменить запись, нажмите на кнопку ниже:</p>
+
+  <p style="text-align: center;">
+    <a th:href="${cancelUrl}" class="btn">Отменить запись</a>
+  </p>
+
+  <div class="footer">
+    <p>Спасибо, что выбрали наш автосалон.</p>
+  </div>
+</div>
+</body>
+</html>

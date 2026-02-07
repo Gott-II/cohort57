@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+          http://www.liquibase.org/xml/ns/dbchangelog
+          https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.23.xsd">
+
+    <changeSet id="001" author="ait">
+        <createTable tableName="cars">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="brand" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="model" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="production_year" type="INT"/>
+            <column name="mileage" type="INT"/>
+            <column name="price" type="INT"/>
+            <column name="status" type="VARCHAR(50)"/>
+            <column name="color" type="VARCHAR(255)"/>
+            <column name="horsepower" type="INT"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
+
+
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+                http://www.liquibase.org/xml/ns/dbchangelog
+                https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.23.xsd">
+
+    <!-- 1. Tabelle -->
+    <include file="changelog/001-create-car-table.xml"/>
+
+    <!-- 2. Sequenz -->
+    <include file="changelog/009-create-cars-sequence.xml"/>
+
+    <!-- 2.1 Sequence → ID binding -->
+    <include file="changelog/010-bind-cars-sequence.xml"/>
+
+
+    <!-- 3. Spalten hinzufügen -->
+    <include file="changelog/002-add-transmission.xml"/>
+    <include file="changelog/003-add-fueltype.xml"/>
+
+    <!-- 4. Testdaten (jetzt ist die Sequenz vorhanden) -->
+    <include file="changelog/004-add-test-data.xml"/>
+
+    <!-- 5. Weitere Änderungen -->
+    <include file="changelog/005-add-audit-columns.xml"/>
+    <include file="changelog/006-add-check-constraints.xml"/>
+    <include file="changelog/007-add-soft-delete-flag.xml"/>
+    <include file="changelog/008-seed-test-data-only-test.xml"/>
+
+    <!-- 6. Neue Tabellen für Dokumente -->
+    <include file="changelog/011-create-car-documents-os.xml"/>
+    <include file="changelog/013-create-client-documents-db.xml"/>
+
+    <!-- 7. Optionale Testdaten für Dokumente -->
+    <include file="changelog/012-add-test-documents.xml"/>
+
+</databaseChangeLog>
+
+

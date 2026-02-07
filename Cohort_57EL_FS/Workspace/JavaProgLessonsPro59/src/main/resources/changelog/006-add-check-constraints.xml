@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.23.xsd">
+
+    <changeSet id="006-add-check-constraints" author="ait">
+        <sql>
+            ALTER TABLE cars
+                ADD CONSTRAINT chk_price CHECK (price >= 0);
+        </sql>
+
+        <sql>
+            ALTER TABLE cars
+                ADD CONSTRAINT chk_mileage CHECK (mileage >= 0);
+        </sql>
+
+        <sql>
+            ALTER TABLE cars
+                ADD CONSTRAINT chk_horsepower CHECK (horsepower >= 1);
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
+

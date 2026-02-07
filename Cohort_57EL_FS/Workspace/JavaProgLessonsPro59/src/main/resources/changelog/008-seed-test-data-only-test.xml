@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+          http://www.liquibase.org/xml/ns/dbchangelog
+          https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.23.xsd">
+
+    <changeSet id="008-seed-test-data-only-test" author="ait">
+        <sql>
+            INSERT INTO cars (
+                id,
+                brand,
+                model,
+                production_year,
+                mileage,
+                price,
+                status,
+                color,
+                horsepower,
+                fuel_type,
+                transmission,
+                deleted,
+                created_at,
+                updated_at
+            ) VALUES (
+                         nextval('cars_seq'),
+                         'TEST_BMW',
+                         'TEST_X5',
+                         2020,
+                         10000,
+                         50000,
+                         'AVAILABLE',
+                         'Black',
+                         250,
+                         'PETROL',
+                         'AUTOMATIC',
+                         FALSE,
+                         '2024-01-01 00:00:00',
+                         '2024-01-01 00:00:00'
+                     );
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
